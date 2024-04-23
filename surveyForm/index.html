@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Phone Review</h1>
+    <p id="description">We appreciate your participation in our survey.</p>
+    <form id="survey-form" method="get">
+      <fieldset>
+        <label id="name-label">Enter Your Name:<input id="name" input="name" type="text" placeholder="Enter Your Name" required/></label>
+        <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="youremail@example.com" required/></label>
+        <label id="number-label">Enter Your Age: (Optional)<input id="number" type="number" min="13" max="120" placeholder="21"></label>
+      </fieldset>
+      <fieldset>
+        <label>Do you have a Mobile Device?
+          <select id="dropdown">
+              <option>Select one</option>
+                <option>Yes</option>
+                <option>No</option>
+          </select>
+        </label>
+        <label> Is having good specs important to you?
+          <input type="radio" name="Yes" value="yes" class="inline">Yes</input>
+          <input type="radio" name="Yes" value="yes" class="inline">No</input>
+          <input type="radio" name="Yes" value="yes" class="inline">None of the above</input>
+        </label>
+        <label>Which of the following OS devices applies to you?
+          <input type="checkbox" value="option" class="inline">Apple</input>
+          <input type="checkbox" value="option" class="inline">Android</input>
+        <label>Any Comments or Questions?
+          <textarea cols="40" rows="5">Enter Your Comments Here...</textarea>
+        </label>
+      </fieldset>
+        <input id="submit" type="submit">
+    </form>
+  </body>
+</html>
